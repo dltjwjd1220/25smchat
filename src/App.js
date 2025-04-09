@@ -101,6 +101,15 @@ function App() {
     return () => clearInterval(interval);
   }, [loading]);  
 
+  useEffect(() => { // 오토스크롤 기능
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
+  }, [messages]);
+
   return (
     <div className="App">
       <Header />
@@ -140,5 +149,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

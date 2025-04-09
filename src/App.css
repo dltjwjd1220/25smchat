@@ -118,7 +118,6 @@ textarea::placeholder {
 
 .message-wrapper.user {
   align-self: flex-end;
-  text-align: right;
 }
 
 .message-wrapper.system {
@@ -141,7 +140,7 @@ textarea::placeholder {
   color: white;
   align-self: flex-end;
   margin-left: auto;
-  text-align: right;
+  text-align: left;
 
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
